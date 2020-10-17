@@ -88,3 +88,9 @@ footer{
     width: 99.4%;
     height: 40px;
 }
+
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}

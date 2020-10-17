@@ -1,0 +1,18 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(33, 41, 56) ;
+    font: normal 12px sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 12vh 82vh 5vh;
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-gap: 5px;
+}
+

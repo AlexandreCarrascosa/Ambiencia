@@ -1,0 +1,29 @@
+p#titulo{     
+    font: bold 30px 'Poiret One' ;
+    color: midnightblue;
+    text-align: center;
+    margin: 5px;
+}
+
+p#subtitulo{
+    font: 20px 'Poiret One';
+    color: lightslategray;
+    text-align: center;
+    margin: 15px;
+}
+
+p#postTitle{
+    padding-left: 5px;
+    font: bold 20px "Poiret One";
+    color: black;
+    margin: auto;
+    margin-top: 15px;
+}
+
+p#post{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font: normal 15px "Raleway";
+    color: gray;
+}
+
