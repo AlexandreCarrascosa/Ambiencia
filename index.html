@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle Estufa Feliz</title>
-    <link rel="stylesheet" href="estilo.css">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/response_style.css">
+    <link rel="stylesheet" href="./styles/textStyle.css">
+    <link rel="stylesheet" href="./styles/mainStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-    <header class="clearfix">   
-        <p id="titulo">ESTUFA FELIZ</p>
-        <img src="./assets/Logo.png" class="logo">
-        <p id="subtitulo"><strong>Sistema de Controle e Monitoramento de Estufas</strong></p>
-    </header>
-    <a href="https://ufr.edu.br/" target="_blank"><img src="./assets/UFR.png" class="ufr"></a>
+        <!--CABEÇALHO-->
+        <header class="cabeca">
+            <div id="logo"><img src="./assets/Logo.png"></div>
+            <div id="titulo">
+                <p id="titulo">ESTUFA FELIZ</p>
+                <p id="subtitulo">Sistema de Controle e Monitoramento de Estufa<p>
+            </div>
+            <div id="ufr"><a href="https://ufr.edu.br" target="_blank"><img src="./assets/UFR.png"></a></div>
+        </header>
 
-        <div id="content">
-            <p id = "postTitle">INFORMAÇÕES GERAIS</p>
-            <p id = "post">
-                Verifique as informações atuais do Sistema como:
-                <strong>Temperatura, Umidade, Luz, Consumo dos Equipamentos</strong>
-            </p>
-        </div>
+        <!--CONTEÚDO PRINCIPAL-->
+        <main class="conteudo">
+            
+            <div>
+                <p id="postTitle">INFORMAÇÕES GERAIS</p>
+                <p ID="post">Verifique as informações atuais do Sistema como:
+                    <strong>Temperatura, Umidade, Luz, Consumo dos Equipamentos</strong></p>
+            </div>
 
-        <div id="content">
-            <p id = "postTitle">CONTROLE DE EQUIPAMENTOS</p>
-            <p id = "post">
-                Acione os ventiladores, irrigação e sistema de iluminação
-            </p>
-        </div>
-        
-        <div id="content">
-            <p id = "postTitle">HISTÓRICO</p>
-            <p id = "post">
+            <div>
+                <p id="postTitle">CONTROLE DE EQUIPAMENTOS</p>
+                <p ID="post">Acione os ventiladores, irrigação e sistema de iluminação</p>
+            </div>
+
+            <div>
+                <p id="postTitle">HISTÓRICO</p>
+                <p ID="post">Verifique as informações atuais do Sistema como:
                 Registro de <strong>Temperatura, Umidade, Luz e situação dos equipametos</strong>
-            </p>
-        </div>
-  
+                </p>
+            </div>
+            
 
+        </main>
 
-    <footer>
-        <p>&copy;AlexandreCarrascosa - 201611632008 <br>Ambiência em Instalações Rurais</p>
-    </footer>
+        <aside></aside>
+
+        <!--RODAPÉ-->
+        <footer>
+            <div class="rodape">
+                <div>&copy;AlexandreCarrascosa - 201611632008</div>
+                <div>Ambiência em Instalações Rurais</div>
+            </div>
+        </footer>
+
     </div>
-    <script src="script.js"></script>
+    
+
 </body>
 </html>
