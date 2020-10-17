@@ -1,11 +1,12 @@
 .cabeca{
     display: grid;
-    grid-template-columns: 25vh 50vh 25vh;
+    grid-template-columns: 16% 25% 9%;
     text-align: center;
     grid-template-areas: "logo nome ufr";
-    justify-content: space-around;
+    justify-content: center;
     align-content: space-around;
-    grid-gap: 50px;
+    grid-gap: 25%;
+    
 }
 
 .rodape{
@@ -20,42 +21,44 @@ header{
     background: whitesmoke;
     grid-area: header;
     color: rgb(38, 38, 151);
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 header > img{
-  text-align: center;
-  margin-top: 25px;
-}
-
-img{
-    width: 90px;
-    height: 90px;
+  align-items: center;
+  margin-top: 50%;
 }
 
 main{
     grid-area: main;
     background: rgb(21, 26, 36) ;
-    width: 75vh;
-    border: 5px solid transparent;
+    width: 30%;
+    height: 75%;
+    align-self: center;
+    border: 5% solid transparent;
     border-radius: 15px;
     justify-self: center;
-}
+    }
 
 .conteudo{
     display: grid;
     grid-template-areas:"post"
                          "post"
                          "post";
-    align-content: center;                    
+    align-content: center;
+    justify-content: center;                    
+ 
 }
 
 .conteudo > div{
     align-self: center;
     justify-self: center;
-    width: 95%;
+    width: 90%;
     background-color: white;
     border-radius: 10px;
-    height: 10vh;
+    height: 90%;
     cursor: pointer;
     margin: 5px;
 }
@@ -70,6 +73,7 @@ footer{
     background: cadetblue;
     grid-area: footer;
     color: whitesmoke;
+    
 }
 
 
