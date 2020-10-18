@@ -1,29 +1,29 @@
 p#titulo{     
-    font: bold 20px 'Poiret One' ;
-    color: midnightblue;
+    font: bold 2rem 'Poiret One' ;
+    color: rgb(255, 255, 255);
     margin: 1%;
     margin-right: 25%;
 }
 
 p#subtitulo{
-    font: 15px 'Poiret One';
-    color: lightslategray;
+    font: 1.5rem 'Poiret One';
+    color: rgb(213, 221, 230);
     margin: 1%;
     margin-right: 20%;
 }
 
-p#postTitle{
-    padding-left: 5px;
-    font: bold 20px "Poiret One";
+.postTitle{
+    padding-left: 0.5rem;
+    font: bold 2rem "Poiret One";
     color: black;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
-p#post{
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font: normal 15px "Raleway";
-    color: gray;
+.post{
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    font: normal 1.5rem "Raleway";
+    color: whitesmoke;
 }
 

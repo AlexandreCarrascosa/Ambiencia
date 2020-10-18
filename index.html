@@ -2,50 +2,62 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitor Estufa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Monitoramento de Estufa</title>
     <link rel="stylesheet" href="./styles/response_style.css">
     <link rel="stylesheet" href="./styles/textStyle.css">
     <link rel="stylesheet" href="./styles/mainStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+  
         <!--CABEÇALHO-->
-        <header class="cabeca">
-            <div id="logo"><img src="./assets/Logo.png"></div>
-            <div id="titulo">
+        <header>
+            <div class="container">
+            <img src="./assets/logo.svg" alt="Projeto Automação de Estufa"/>
+
+            <div class="titulo">
                 <p id="titulo">ESTUFA FELIZ</p>
                 <p id="subtitulo">Sistema de Controle e Monitoramento de Estufa<p>
             </div>
-            <div id="ufr"><a href="https://ufr.edu.br" target="_blank"><img src="./assets/UFR.png"></a></div>
+
+            <div class="menu-section">
+                <nav>
+                    <ul>
+                        <li><a href="https://ufr.edu.br" target="_blank" alt="Universidade Federal de Rondonópolis">Site UFR</a></li>
+                        <li><a href="http://lattes.cnpq.br/3055159828423506" target="_blank">Currículo Lattes</li></a>
+                    </ul>   
+                </nav>  
+            </div>
+
         </header>
 
         <!--CONTEÚDO PRINCIPAL-->
-        <main class="conteudo">
+        <main>
+            <section class="buttons">
+                <div class="buttom">
             
-            <div>
-                <p id="postTitle">INFORMAÇÕES GERAIS</p>
-                <p ID="post">Verifique as informações atuais do Sistema como:
-                    <strong>Temperatura, Umidade, Luz, Consumo dos Equipamentos</strong></p>
-            </div>
+                    <div class = "content">
+                        <p class="postTitle">INFORMAÇÕES GERAIS</p>
+                        <p class="post">Verifique as informações atuais do Sistema como:
+                            <strong>Temperatura, Umidade, Luz, Consumo dos Equipamentos</strong></p>
+                    </div>
 
-            <div>
-                <p id="postTitle">CONTROLE DE EQUIPAMENTOS</p>
-                <p ID="post">Acione os ventiladores, irrigação e sistema de iluminação</p>
-            </div>
+                    <div class="content">
+                        <p class="postTitle">CONTROLE DE EQUIPAMENTOS</p>
+                        <p class="post">Acione os ventiladores, irrigação e sistema de iluminação</p>
+                    </div>
 
-            <div>
-                <p id="postTitle">HISTÓRICO</p>
-                <p ID="post">Verifique as informações atuais do Sistema como:
-                Registro de <strong>Temperatura, Umidade, Luz e situação dos equipametos</strong>
-                </p>
-            </div>
-            
+                    <div class="content">
+                        <p class="postTitle">HISTÓRICO</p>
+                        <p class="post">Verifique as informações atuais do Sistema como:
+                        Registro de <strong>Temperatura, Umidade, Luz e situação dos equipametos</strong>
+                        </p>
+                    </div>
 
+                </div>
+            </section>
         </main>
-
-        <aside></aside>
 
         <!--RODAPÉ-->
         <footer>
