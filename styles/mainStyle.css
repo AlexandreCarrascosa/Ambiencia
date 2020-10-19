@@ -86,7 +86,7 @@ main{
 .buttom{
   display: block;
   flex-direction: column;
-  background-color: darkgray;
+  background-color: white;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   border-radius: 10px;
