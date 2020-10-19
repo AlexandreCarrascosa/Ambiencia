@@ -64,8 +64,8 @@ header nav ul li a {
   }
 
 main{
-    margin-bottom: 80px;
-    margin-top: 80px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .buttons{
@@ -74,15 +74,14 @@ main{
   margin: auto;
   
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-content: space-around;
-  margin-top: 50px 
-  
-  
+  grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1rem));
+  grid-gap: 20px;
+
 }
 
+
 .buttom{
-  display: flex;
+  display: block;
   flex-direction: column;
   background-color: darkgray;
   cursor: pointer;
@@ -92,9 +91,11 @@ main{
 
 .content{
   margin: 20px;
+ 
 }
 
 .postTitulo{
+  text-decoration: none;
   margin-bottom: 20px;
 }
 
@@ -114,59 +115,69 @@ footer{
       color: whitesmoke;
       bottom: 0;
       width: 100%;
-      
   }
   
 
-
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     html{
       font-size:50%;
     }
-  }
-
-@media (max-width: 596px) {
-  html{
-       font-size:45%;
+    header img {
+      width: 7rem;
     }
-  header img {
-      width: 8rem;
   }
-}
 
-@media (max-width: 538px) {
-  html{
-       font-size:40%;
+  @media (max-width: 630px) {
+    html{
+      font-size:45%;
     }
-  header img {
-      width: 6rem;
+    header img {
+      width: 5rem;
+    }
   }
-}
 
-@media (max-width: 470px) {
-  html{
+  @media (max-width: 500px) {
+    html{
       font-size:35%;
+    }
+    header img {
+      width: 5rem;
+    }
   }
-  header img {
-    width: 5rem;
-  }
-}
 
-@media (max-width: 380px) {
-  html{
-      font-size:35%;
+@media (max-width: 390px) {
+    html{
+      font-size:30%;
+    }
+    header .container{
+      justify-content: center;
+    }
+    header img {
+      width: 5rem;
+    }
+    nav{
+      display:none
+        }
+    header{
+      text-align: center;
+    }
   }
-  header img {
-    width: 3rem;
-  }
-}
 
-
-@media (max-width: 321px) {
-  html{
+@media (max-width: 280px) {
+    html{
       font-size:25%;
+    }
+    header .container{
+      justify-content: center;
+    }
+    header img {
+      width: 5rem;
+    }
+    nav{
+      display:none
+        }
+    header{
+      text-align: center;
+    }
   }
-  header img {
-    width: 5rem;
-  }
-}
+

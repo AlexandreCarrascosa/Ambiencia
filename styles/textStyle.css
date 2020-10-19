@@ -1,3 +1,9 @@
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+
 p#titulo{     
     font: bold 2rem 'Poiret One' ;
     color: rgb(255, 255, 255);
