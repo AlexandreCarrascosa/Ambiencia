@@ -3,19 +3,16 @@ a:link
  text-decoration:none; 
 } 
 
-
 p#titulo{     
     font: bold 2rem 'Poiret One' ;
     color: rgb(255, 255, 255);
     margin: 1%;
-    margin-right: 25%;
 }
 
 p#subtitulo{
     font: 1.5rem 'Poiret One';
     color: rgb(213, 221, 230);
     margin: 1%;
-    margin-right: 20%;
 }
 
 .postTitle{
