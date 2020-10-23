@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/mainStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
-<body onload="readXML()">
+<body>
   
         <!--CABEÇALHO-->
         <header>
@@ -36,8 +36,36 @@
         </header>
 
         <!--CONTEÚDO PRINCIPAL-->
-        
-        <main></main>
+        <main>
+            <section class="buttons">
+                
+                <div class="buttom">
+                    
+                    <div class = "graph">
+                        <table class="history" id="myTable">
+                            <tr>
+                              <th><img src="../icons/datetime.svg"/> Data/Hora</th>
+                              <th><img src="../icons/temp.svg" /> Temperatura (ºC)</th>
+                              <th><img src="../icons/moisture.svg" /> Umidade (%)</th>
+                              <th><img src="../icons/waterdrop.svg"/> Irrigação</th>
+                              <th><img src="../icons/fan.svg"/> Ventilação</th>
+                              <th><img src="../icons/lamp.svg"/> Iluminação</th>
+                            </tr>
+                            <tr id = "mostrar">
+                              <td>19/10/2020, 21:37</td>
+                              <td>26</td>
+                              <td>81</td>
+                              <td>OFF</td>
+                              <td>OFF</td>
+                              <td>ON</td>
+                            </tr>
+                          </table>
+                          
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
 
         <!--RODAPÉ-->
         <footer>

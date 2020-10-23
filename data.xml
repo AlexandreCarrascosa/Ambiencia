@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Historico>
+    <Info>
+        <data>22/10/2020</data>
+        <hora>11:52</hora>
+        <temp>26</temp>
+        <umd>81</umd>
+        <aspr>OFF</aspr>
+        <vent>OFF</vent>
+        <lamp>ON</lamp>
+    </Info>
+    <Info>
+        <data>22/10/2020</data>
+        <hora>12:52</hora>
+        <temp>26</temp>
+        <umd>81</umd>
+        <aspr>OFF</aspr>
+        <vent>OFF</vent>
+        <lamp>ON</lamp>
+    </Info>
+    <Info>
+     <data>22/10/2020</data>
+        <hora>13:37</hora>
+        <temp>26</temp>
+        <umd>81</umd>
+        <aspr>OFF</aspr>
+        <vent>OFF</vent>
+        <lamp>ON</lamp>
+    </Info>
+</Historico>

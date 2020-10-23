@@ -39,15 +39,27 @@
         <!--CONTEÚDO PRINCIPAL-->
         <main>
             <section class="buttons">
-                
                 <div class="buttom">
-                    <a href="./pages/info.html" alt="informações">
-                    <div class = "content">
-                        <p class="postTitle">INFORMAÇÕES GERAIS</p>
-                        <p class="post">Verifique as informações atuais do Sistema como:
-                            <strong>Temperatura, Umidade, Luz, Consumo dos Equipamentos</strong></p>
+                    <div class="graph">
+                        <p class="postTitle" id ="titleAtual">INFORMAÇÕES ATUAIS </p></br>
+                        <table class="history" id="myTableAtual" onload="soma()">
+                            <tr>
+                              <th><img src="../icons/temp.svg" /> Temperatura (ºC)</th>
+                              <th><img src="../icons/moisture.svg" /> Umidade (%)</th>
+                              <th><img src="../icons/waterdrop.svg"/> Irrigação</th>
+                              <th><img src="../icons/fan.svg"/> Ventilação</th>
+                              <th><img src="../icons/lamp.svg"/> Iluminação</th>
+                            </tr>
+                            <tr id = "Atual">
+                                <td id="temperatura"></td>
+                                <td id="umidade"></td>
+                                <td id="irrigacao"></td>
+                                <td id="ventilador"></td>
+                                <td id="lampadas"></td>
+                            </tr>
+                        </table>
+                    
                     </div>
-                    </a>
                 </div>
                 
                 <div class="buttom">
@@ -69,7 +81,7 @@
                 </div>
             </section>
         </main>
-
+        
         <!--RODAPÉ-->
         <footer>
             <div class="rodape">
@@ -78,8 +90,28 @@
             </div>
         </footer>
 
-    </div>
-    
+    </div>  
+    <script src="scripts/atual.js" >
+        var myTab = document.getElementById('myTableAtual');
 
+            for (i = 1; i < myTab.rows.length; i++) {
+
+                // GET THE CELLS COLLECTION OF THE CURRENT ROW.
+                var objCells = myTab.rows.item(i).cells;
+
+                // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
+                for (var j = 0; j < objCells.length; j++) {
+                    
+                    if(objCells.item(j).innerHTML == "OFF"){
+                        objCells.item(j).style.color = "red"
+                    }
+
+                    if(objCells.item(j).innerHTML == "ON"){
+                        objCells.item(j).style.color = 'lightgreen'
+                    }
+                }
+
+            }
+    </script>
 </body>
 </html>
