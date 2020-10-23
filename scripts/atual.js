@@ -3,6 +3,7 @@ var hora = data.getHours() + ":" + data.getMinutes();
 var dia = data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear();
 
 var local = document.getElementById("titleAtual").innerHTML += `- ${dia}`;
+var hora = document.getElementById("postAtual").innerHTML += ` - ${hora}`
 
 var temp = document.getElementById("temperatura")
 var umid = document.getElementById("umidade")
