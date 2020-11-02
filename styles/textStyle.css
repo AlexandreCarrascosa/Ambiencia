@@ -30,6 +30,33 @@ p#subtitulo{
     color: darkgray;
 }
 
+.buttom:hover .postTitle {
+    color:white;
+  }
+  
+  .buttom:hover .post{
+    color:white;
+  }
+
+.buttom:focus{
+  outline: none;
+}
+
+.buttom:hover{
+  background: #2b4b68d2;
+}
+
+.buttom:hover:before{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: .6;
+  transition: .7s;
+}
+
+.buttom:hover:after{
+  transform: translateX(300px) skewX(-15deg);
+  opacity: 1;
+  transition: .7s;
+}
 .cool-link::after{
     content: '';
     display: block;

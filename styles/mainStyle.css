@@ -97,6 +97,17 @@ main{
   border-radius: 10px;
 }
 
+.buttom-atual{
+  display: block;
+  flex-direction: column;
+  background-color: white;
+  
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+}
+
+
+
 .content{
   margin: 20px;
   cursor: pointer;
