@@ -15,10 +15,10 @@ def Atualizar():
     
     
     
-    info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
+    info = [b"alexandrecarrascosa", b"725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
     output = Popen(send, stdout=PIPE, stdin=PIPE, universal_newlines=True).communicate(input=f'{info[0]}\n{info[1]}')[0]
     #output = Popen.communicate(f'{info[0]}\n{info[1]}\n')
-    print(output)
+    
    
    
     return save, send, output
