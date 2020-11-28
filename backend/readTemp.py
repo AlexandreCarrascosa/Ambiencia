@@ -25,6 +25,8 @@ def Data():
 	hora = atual.strftime("%H:%M")
 	
 	return data, hora
+	
+	
 
 while True:
 	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
