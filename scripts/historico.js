@@ -4,7 +4,7 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
 document.write("<section class='buttons'><div class='buttom-atual'><div class='graph'>")
-document.write("<table class='history' id='myTable' data-pagecount='3'>")
+document.write("<table class='history' id='myTable'>")
 document.write("<tr><th><img src='../icons/datetime.svg'/> Data/Hora</th>")
 document.write('<th><img src="../icons/temp.svg" /> Temperatura (ºC)</th>')
 document.write('<th><img src="../icons/moisture.svg" /> Umidade (%)</th>')

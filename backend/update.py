@@ -1,4 +1,3 @@
-
 from subprocess import check_output, Popen, PIPE, STDOUT
 import os
 from time import sleep
@@ -20,7 +19,7 @@ def Atualizar():
     send = check_output(["git", "commit", "-m", "'Update'"])
     up = check_output(["git", "push"])
     
-    Timer(0,300)
+    Timer(0,120)
 
     return save, send, up
     
@@ -28,5 +27,5 @@ def Atualizar():
 
 while True:
 	Atualizar()
-	sleep(300)
+	sleep(120)
 

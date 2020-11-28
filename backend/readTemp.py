@@ -4,6 +4,7 @@ from serial import Serial
 from glob import glob
 from time import sleep
 from datetime import datetime
+import update
 
 
 conexao = Serial('/dev/ttyACM0', 9600)
@@ -21,8 +22,8 @@ def readTemp():
 	
 def Data():
 	atual = datetime.now()
-	data = atual.strftime("%d/%m/%y")
-	hora = atual.strftime("%H:%M:%S")
+	data = atual.strftime("%d/%m/20%y")
+	hora = atual.strftime("%H:%M")
 	
 	return data, hora
 
@@ -56,7 +57,9 @@ while True:
 
 	tree.write('../data.xml')
 	
-	sleep(60)
+	update.Atualizar()
+	
+	sleep(120)
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
 	
