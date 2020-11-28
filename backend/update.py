@@ -10,11 +10,14 @@ def Atualizar():
     #Salvar todos os gits
     save = check_output(["git", "add", "."])
     send = check_output(["git", "commit", "-m", "'Update'"])
-    up = check_output(["git", "push"])
     
+    #up = check_output(["git", "push"])
+    send = ["git", "push"]
     
-    info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
-    output = Popen.communicate(f'{info[0]}\n{info[1]}\n')
+    output = Popen(send, stdout=PIPE).communicate()
+    
+    #info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
+    #output = Popen.communicate(f'{info[0]}\n{info[1]}\n')
    
     return save, send, up, output
 
