@@ -14,7 +14,7 @@ def Atualizar():
     #up = check_output(["git", "push"])
     send = ["git", "push"]
     
-    output = Popen(send, stdout=PIPE).communicate()
+    output = Popen(send, stdout=PIPE).communicate()[0]
     print(output)
     
     #info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
