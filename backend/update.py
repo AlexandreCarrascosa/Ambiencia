@@ -1,6 +1,7 @@
 
 from subprocess import check_output, Popen, PIPE, STDOUT
 import os
+from time import sleep
 
 
 def Atualizar():
@@ -14,6 +15,7 @@ def Atualizar():
 
     return save, send, up
 
-Atualizar()
-
+while True:
+	Atualizar()
+	sleep((60*5))
 
