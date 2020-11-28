@@ -27,6 +27,8 @@ def Data():
 	return data, hora
 
 while True:
+	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
+	Timer(0, 15, msg)
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
 	temperatura = readTemp()[6:]
@@ -56,8 +58,8 @@ while True:
 
 	tree.write('../data.xml')
 		
-	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
-	Timer(0, 15, msg)
+	
+	sleep(5)
 	Atualizar()
 	
 	
