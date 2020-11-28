@@ -57,7 +57,8 @@ while True:
 	lamp.text = 'OFF'
 
 	tree.write('../data.xml')
-		
+	
+	sleep(10)	
 	Atualizar()
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')

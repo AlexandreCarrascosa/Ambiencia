@@ -19,7 +19,7 @@ def Atualizar():
     send = check_output(["git", "commit", "-m", "'Update'"])
     up = check_output(["git", "push"])
     
-    Timer(0,120)
+    Timer(0,20)
 
     return save, send, up
     
