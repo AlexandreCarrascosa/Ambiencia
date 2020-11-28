@@ -1,5 +1,10 @@
 
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url('header.css');
+@import url('footer.css');
+@import url('content.css');
+@import url('textStyle.css');
+@import url('response_style.css');
 
 * {
   box-sizing: border-box;
@@ -34,198 +39,16 @@ body {
   font-size: 1.6rem;
 }
 
-header {
-  background-color: #395a85;
-}
-
-header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
-}
-
-header img {
-  width: 10rem;
-  margin-left: 0.5rem;
-  padding: 0.5rem 0;
-}
-
-header nav ul{
-  display: flex;
-  font-size: 1.4rem;
-}
-
-header nav ul li{
-  list-style: none;
-  font-size: 1em;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.4rem; 
-    padding: 2.4rem;
-    transition: all 250ms linear 0s;
-  }
-
 main{
   margin-bottom: 80px;
   margin-top: 80px;
 }
 
-.buttons{
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1rem));
-  grid-gap: 20px;
-}
+table {
+  page-break-before: always;  
+} 
 
-.buttom{
-  display: block;
-  flex-direction: column;
-  background-color: white;
-  
-  transition: all 0.3s ease 0s;
-  border-radius: 10px;
-}
-
-.buttom-atual{
-  display: block;
-  flex-direction: column;
-  background-color: white;
-  
-  transition: all 0.3s ease 0s;
-  border-radius: 10px;
-}
-
-
-
-.content{
-  margin: 20px;
-  cursor: pointer;
- }
-
-.postTitulo{
-  text-decoration: none;
-  margin-bottom: 20px;
-}
-
-.graph{
-  margin: 20px;
-  cursor: crosshair;
-  text-align: center;
-}
-
-table{
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th {
-  display: table-cell;
-  vertical-align: inherit;
-  font-weight: bold;
-  text-align: center;
-}
-
-th, td {
-  border-bottom: 1px solid #ddd;
-}
-
-.rodape{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "cpr idnt";
-      text-align: center;
-      align-content: 0;
-  }
-  
-footer{
-      position: absolute;
-      font-family: 'Raleway','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      background: #395a85;
-      color: whitesmoke;
-      bottom: 0;
-      width: 100%;
-  }
-
-@media (max-width: 750px) {
-    html{
-      font-size:50%;
-    }
-    header img {
-      width: 7rem;
-    }
-  }
-
-  @media (max-width: 630px) {
-    html{
-      font-size:45%;
-    }
-    header img {
-      width: 5rem;
-    }
-  }
-
-  @media (max-width: 500px) {
-    html{
-      font-size:35%;
-    }
-    header img {
-      width: 5rem;
-    }
-  }
-
-@media (max-width: 390px) {
-    html{
-      font-size:30%;
-    }
-    header .container{
-      display: block;
-      justify-content: center;
-      
-    }
-    header img {
-      width: 5rem;
-      margin-bottom: 5px;
-    }
-    nav{
-      display: flex;
-      justify-content: center;
-      padding: 5px;
-      }
-    header{
-      justify-content: center;
-      text-align: center;
-    }
-    .titulo{
-      margin-right: 0%;
-    }
-  }
-
-@media (max-width: 280px) {
-    html{
-      font-size:25%;
-    }
-    header .container{
-      justify-content: center;
-    }
-    header img {
-      width: 5rem;
-    }
-    nav{
-      display:none
-        }
-    header{
-      text-align: center;
-    }
-  }
-
+tr{
+  page-break-inside: avoid;  
+  page-break-after: auto;
+} 

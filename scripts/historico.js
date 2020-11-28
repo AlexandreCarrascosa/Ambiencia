@@ -3,8 +3,8 @@ xmlhttp.open("GET","../data.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
-document.write("<section class='buttons'><div class='buttom'><div class='graph'>")
-document.write("<table class='history' id='myTable'>")
+document.write("<section class='buttons'><div class='buttom-atual'><div class='graph'>")
+document.write("<table class='history' id='myTable' data-pagecount='3'>")
 document.write("<tr><th><img src='../icons/datetime.svg'/> Data/Hora</th>")
 document.write('<th><img src="../icons/temp.svg" /> Temperatura (ºC)</th>')
 document.write('<th><img src="../icons/moisture.svg" /> Umidade (%)</th>')
@@ -34,7 +34,7 @@ for (i=0;i<x.length;i++)
     }
 document.write('</table></div></div></section>')
 
-var myTab = document.getElementById('myTableAtual');
+var myTab = document.getElementById('myTable');
 
 for (i = 1; i < myTab.rows.length; i++) {
 
@@ -54,3 +54,4 @@ for (i = 1; i < myTab.rows.length; i++) {
     }
 
 }
+

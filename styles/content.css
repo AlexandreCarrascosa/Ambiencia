@@ -1,0 +1,60 @@
+
+.buttons{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1rem));
+    grid-gap: 20px;
+  }
+  
+  .buttom{
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+  }
+  
+  .buttom-atual{
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+  } 
+
+.content{
+    margin: 20px;
+    cursor: pointer;
+   }
+  
+  .postTitulo{
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  
+  .graph{
+    margin: 20px;
+    cursor: crosshair;
+    text-align: center;
+  }
+  
+  table{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }

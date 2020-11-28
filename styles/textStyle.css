@@ -34,7 +34,7 @@ p#subtitulo{
     color:white;
   }
   
-  .buttom:hover .post{
+.buttom:hover .post{
     color:white;
   }
 
@@ -70,3 +70,4 @@ p#subtitulo{
     width: 100%;
     transition: width .3s;
 }
+

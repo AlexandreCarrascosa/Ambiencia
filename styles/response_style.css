@@ -1,0 +1,72 @@
+@media (max-width: 750px) {
+    html{
+      font-size:50%;
+    }
+    header img {
+      width: 7rem;
+    }
+  }
+
+  @media (max-width: 630px) {
+    html{
+      font-size:45%;
+    }
+    header img {
+      width: 5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    html{
+      font-size:35%;
+    }
+    header img {
+      width: 5rem;
+    }
+  }
+
+@media (max-width: 390px) {
+    html{
+      font-size:30%;
+    }
+    header .container{
+      display: block;
+      justify-content: center;
+      
+    }
+    header img {
+      width: 5rem;
+      margin-bottom: 5px;
+    }
+    nav{
+      display: flex;
+      justify-content: center;
+      padding: 5px;
+      }
+    header{
+      justify-content: center;
+      text-align: center;
+    }
+    .titulo{
+      margin-right: 0%;
+    }
+  }
+
+@media (max-width: 280px) {
+    html{
+      font-size:25%;
+    }
+    header .container{
+      justify-content: center;
+    }
+    header img {
+      width: 5rem;
+    }
+    nav{
+      display:none
+        }
+    header{
+      text-align: center;
+    }
+  }
+
