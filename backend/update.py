@@ -11,6 +11,10 @@ def Atualizar():
     save = check_output(["git", "add", "."])
     send = check_output(["git", "commit", "-m", "'Update'"])
     up = check_output(["git", "push"])
+    
+    
+    info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
+    Popen.communicate(input=f'{info[0]}\n{info[1]}\n')
    
     return save, send, up
 
