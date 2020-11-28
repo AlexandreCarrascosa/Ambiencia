@@ -1,12 +1,11 @@
 import xml.etree.ElementTree as ET
-import pywhatkit as kit
+#import pywhatkit as kit
 from serial import Serial
 from glob import glob
 from time import sleep
 from datetime import datetime
 from subprocess import check_output
-from update import Atualizar
-
+from update import Timer, Atualizar
 
 conexao = Serial('/dev/ttyACM0', 9600)
 path = '../data.xml'
@@ -58,8 +57,9 @@ while True:
 
 	tree.write('../data.xml')
 	
-	sleep(20)
-	Atualizar()	
+	msg = "Dados escritos!\nIniciando contagem para próximo registro!"
+	Timer(0, 120, msg)
+	Atualizar()
 	
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
