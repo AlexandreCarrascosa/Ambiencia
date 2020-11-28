@@ -13,7 +13,7 @@ def Atualizar():
     #up = check_output(["git", "push"])
     
     info = [b"alexandrecarrascosa", b"725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
-    p = Popen(["git", "push"], shell=True, stdout=PIPE, stdin=PIPE, universal_newlines=True)
+    p = Popen(["git", "push"], stdout=PIPE, stdin=PIPE, universal_newlines=True)
     output = p.communicate(input=f'{info[0]}\n{info[1]}\n')
     #output = Popen.communicate(f'{info[0]}\n{info[1]}\n')
     
