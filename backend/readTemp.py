@@ -59,9 +59,9 @@ while True:
 	tree.write('../data.xml')
 		
 	
-	sleep(5)
+	sleep(20)
 	Atualizar()
-	
+	sleep(10)
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
 	
