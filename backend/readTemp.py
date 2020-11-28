@@ -59,7 +59,6 @@ while True:
 	
 	update.Atualizar()
 	
-	sleep(120)
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
 	
