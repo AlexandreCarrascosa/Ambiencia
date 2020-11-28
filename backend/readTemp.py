@@ -28,7 +28,6 @@ def Data():
 	
 	return data, hora
 
-check_output(["python", "update.py"])
 while True:
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
