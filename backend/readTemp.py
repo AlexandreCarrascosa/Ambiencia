@@ -5,6 +5,7 @@ from glob import glob
 from time import sleep
 from datetime import datetime
 import update
+from subprocess import check_output
 
 
 conexao = Serial('/dev/ttyACM0', 9600)
@@ -27,6 +28,7 @@ def Data():
 	
 	return data, hora
 
+check_output(["python", "update.py"])
 while True:
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
@@ -56,9 +58,8 @@ while True:
 	lamp.text = 'OFF'
 
 	tree.write('../data.xml')
-	
-	update.Atualizar()
-	
+		
+	sleep(120)
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
 	

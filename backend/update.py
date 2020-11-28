@@ -28,4 +28,5 @@ def Atualizar():
 while True:
 	Atualizar()
 	sleep(120)
-
+	print("Atualizando e iniciando nova contagem..")
+	sleep(5)
