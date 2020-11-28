@@ -59,8 +59,9 @@ while True:
 
 	tree.write('../data.xml')
 	
+	sleep(30)	
 	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
-	Timer(0, 15, msg)
+	Timer(0, 5, msg)
 	
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
