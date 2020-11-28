@@ -14,9 +14,9 @@ def Atualizar():
     
     
     info = ["alexandrecarrascosa", "725e171b8bdba60628c2d779b5ae1bcc6cdd1b9f"]
-    Popen.communicate(f'{info[0]}\n{info[1]}\n')
+    output = Popen.communicate(f'{info[0]}\n{info[1]}\n')
    
-    return save, send, up
+    return save, send, up, output
 
 Atualizar()
 
