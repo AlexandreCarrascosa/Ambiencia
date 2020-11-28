@@ -20,6 +20,6 @@ def Atualizar():
     send = check_output(["git", "commit", "-m", "'Update'"])
     up = check_output(["git", "push"])
     
-    return save, send, up
+    
     
 

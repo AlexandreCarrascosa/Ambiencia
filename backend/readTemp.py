@@ -6,7 +6,6 @@ from time import sleep
 from datetime import datetime
 from subprocess import check_output
 from update import Timer, Atualizar
-
 conexao = Serial('/dev/ttyACM0', 9600)
 path = '../data.xml'
 tree = ET.parse(path)
@@ -28,8 +27,6 @@ def Data():
 	return data, hora
 
 while True:
-	Atualizar()
-	
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
 	temperatura = readTemp()[6:]
@@ -58,10 +55,10 @@ while True:
 	lamp.text = 'OFF'
 
 	tree.write('../data.xml')
-	
-	sleep(30)	
+		
 	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
-	Timer(0, 5, msg)
+	Timer(0, 15, msg)
+	Atualizar()
 	
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
