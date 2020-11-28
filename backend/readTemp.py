@@ -4,8 +4,8 @@ from serial import Serial
 from glob import glob
 from time import sleep
 from datetime import datetime
-import update
 from subprocess import check_output
+from update import Atualizar
 
 
 conexao = Serial('/dev/ttyACM0', 9600)
@@ -58,7 +58,7 @@ while True:
 
 	tree.write('../data.xml')
 		
-	sleep(120)
+	Atualizar()
 	
 	#print(f'{Data()[0]}, {Data()[1]}, {umidade}, {temperatura}')
 	
