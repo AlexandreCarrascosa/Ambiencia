@@ -59,7 +59,7 @@ while True:
 	tree.write('../data.xml')
 		
 	
-	sleep(20)
+	sleep(5)
 	Atualizar()
 	sleep(10)
 	

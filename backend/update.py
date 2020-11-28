@@ -13,13 +13,13 @@ def Timer(init, end, msg="\n"):
 
 def Atualizar():
 #Muda diretório para site
-    print(os.chdir(r'..//'))
+    os.chdir(r'..//')
 
     #Salvar todos os gits
     save = check_output(["git", "add", "."])
     send = check_output(["git", "commit", "-m", "'Update'"])
-    up = Popen(["git", "push"])
+    up = check_output(["git", "push"])
     
-    
+    os.chdir(r'backend')
     
 
