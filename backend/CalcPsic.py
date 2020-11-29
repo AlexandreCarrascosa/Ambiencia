@@ -34,25 +34,23 @@ def CalcPsic(TBS, UR):
                 h = (1.006*TBS) + RM * (2501 + (1.805*TBU))
                 hs = (1.006*TBU) + RMS2 * (2501+1.805*TBU)
                 ha = 4.186 * TBU
-
+                
                 equation = (hs-(h+ha*(RMS-RM)))
-                if round(equation, 1) == 0:
+                if round(equation, 1) == 0: 
                         values = {"PVS": PVS, "PPV": PPV, "RMS": RMS, "RM": RM, "TPO": TPO, "v": v, "p": p, "h": h, "TBU": TBU}
-
                         for i in values:
                                 if values[i] < 1:
                                         values[i] =  round(values[i],4)
+                        
                                 else: 
                                         values[i] = round(values[i], 2)
                         
                         xml = dicttoxml(values)
-                        with open("../calc.xml", "w") as xmlfile:
+                        with open(r"..\\calc.xml", "w") as xmlfile:
                                 xmlfile.write(xml.decode())
-                break
-	    
+                        break
+	    			
 
-			
-#values = dict(CalcPsic(23.2, 63))
 
 
 
