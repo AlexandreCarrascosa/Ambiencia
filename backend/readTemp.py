@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as ET
 #import pywhatkit as kit
-#from serial import Serial
 import serial
 from glob import glob
 from time import sleep
@@ -12,7 +11,7 @@ from CalcPsic import CalcPsic
 from sys import platform
 
 if platform == 'win32':
-	conexao = serial.Serial('COM3', 9600)
+	conexao = serial.Serial('COM4', 9600)
 else:
 	conexao = serial.Serial('/dev/ttyACM0', 9600)
 
@@ -39,7 +38,7 @@ def Data():
 
 while True:
 	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
-	Timer(0, 15, msg)
+	Timer(0, 5, msg)
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
 	temperatura = readTemp()[6:]

@@ -3,12 +3,12 @@ from glob import glob
 
 def AtualRefresh(data, hora, temp, umd, aspr="OFF", vent="OFF", lamp="OFF"):
 
-	path = '../atual.xml'
+	path = r'..\\atual.xml'
 	tree = ET.parse(path)
 	root = tree.getroot()
 
 
-	for i in root.getiterator():
+	for i in root.iter():
 		if i.tag == 'data':
 			i.text = data
 		if i.tag == 'hora':

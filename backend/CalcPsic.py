@@ -36,20 +36,18 @@ def CalcPsic(TBS, UR):
                 ha = 4.186 * TBU
 
                 equation = (hs-(h+ha*(RMS-RM)))
+                if round(equation, 1) == 0:
+                        values = {"PVS": PVS, "PPV": PPV, "RMS": RMS, "RM": RM, "TPO": TPO, "v": v, "p": p, "h": h, "TBU": TBU}
+
+                        for i in values:
+                                if values[i] < 1:
+                                        values[i] =  round(values[i],4)
+                                else: 
+                                        values[i] = round(values[i], 2)
                         
-                if round(equation,1) == 0:
-					values = {"PVS": PVS, "PPV": PPV, "RMS": RMS, "RM": RM, "TPO": TPO, "v": v, "p": p, "h": h, "TBU": TBU}
-				 
-				   	for i in values:
-                    	if values[i] < 1:
-							values[i] = round(values[i], 4)
-                		else:
-                    		values[i] = round(values[i],2)
-                                            
-                
-                	xml = dicttoxml(values)
-                	with open("../calc.xml", "w") as xmlfile:
-						xmlfile.write(xml.decode())
+                        xml = dicttoxml(values)
+                        with open("../calc.xml", "w") as xmlfile:
+                                xmlfile.write(xml.decode())
                 break
 	    
 

@@ -20,9 +20,9 @@ def Atualizar():
     os.chdir(r'..//')
 
     #Salvar todos os gits
-    save = check_output(["git", "add", "."])
-    send = check_output(["git", "commit", "-m", "'Update'"])
-    up = check_output(["git", "push"])
+    check_output(["git", "add", "."])
+    check_output(["git", "commit", "-m", "'Update'"])
+    check_output(["git", "push"])
     
     os.chdir(r'backend')
     
