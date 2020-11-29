@@ -64,10 +64,12 @@ while True:
 	tree.write('../data.xml')
 		
 	AtualRefresh(Data()[0],
-				 Data()[1],
-				 temperatura,
-				 umidade)
+		     Data()[1],
+		     temperatura,
+	 	     umidade)
+	 	     
 	CalcPsic(temperatura, umidade)
+
 	sleep(10)
 	Atualizar()
 	

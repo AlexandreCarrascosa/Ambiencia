@@ -27,7 +27,21 @@
     border-radius: 10px;
   } 
 
-.content{
+  .buttom-info{
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    text-align: center;    
+  } 
+
+.buttom-info content p{text-align: center;}
+
+.buttom-info .postInfo{cursor: default;}
+
+  .content{
     margin: 20px;
     cursor: pointer;
    }

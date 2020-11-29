@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Monitoramento de Estufa</title>
     <link rel="icon" href="../assets/logo.svg">
-    <link rel="stylesheet" href="../styles/response_style.css">
-    <link rel="stylesheet" href="../styles/textStyle.css">
     <link rel="stylesheet" href="../styles/mainStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Raleway&family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
 </head>
@@ -38,14 +36,45 @@
         <!--CONTEÚDO PRINCIPAL-->
         <main>
             <section class="buttons">
-                
-                <div class="buttom">
-                    <a href="info.html" alt="informações">
+                <div class="buttom-info">
                     <div class = "content">
-                        
+                    <p class="postInfo" id="PostInfo">
+                        As informações aqui contidas são referentes a calculos psicométricos, servindo como base para ajustes técnicos e dimensionamentos.<br>
+                        <b>Esses dados são com base na última medição do sistema.</b>
+                    </p>
                     </div>
-                    </a>
                 </div>
+
+                <div class="buttom-atual">
+                    <div class="graph">
+                        <table class="CalcPsic" id="myCalcs" onload="soma()">
+                            <tr>
+                              <th>PVS (Pa)</th>
+                              <th>PPV (Pa)</th>
+                              <th>RMS (kg/kg)</th>
+                              <th>RM (kg/kg)</th>
+                              <th>TPO (ºC)</th>
+                              <th>v (m³/kg)</th>
+                              <th>p (kg/m³)</th>
+                              <th>h (kJ/kg)</th>
+                              <th>TBU (ºC)</th>
+                            </tr>
+                            <tr id = "Calc">
+                                <td id="pvs"></td>
+                                <td id="ppv"></td>
+                                <td id="rms"></td>
+                                <td id="rm"></td>
+                                <td id="tpo"></td>
+                                <td id="v"></td>
+                                <td id="p"></td>
+                                <td id="h"></td>
+                                <td id="tbu"></td>
+                            </tr>
+                        </table>
+                    
+                    </div>
+                </div>
+
             </section>
         </main>
 
@@ -58,7 +87,28 @@
         </footer>
 
     </div>
-    
+    <script src="../scripts/info.js">
+        var myTab = document.getElementById('myTableAtual');
+
+            for (i = 1; i < myTab.rows.length; i++) {
+
+                // GET THE CELLS COLLECTION OF THE CURRENT ROW.
+                var objCells = myTab.rows.item(i).cells;
+
+                // LOOP THROUGH EACH CELL OF THE CURENT ROW TO READ CELL VALUES.
+                for (var j = 0; j < objCells.length; j++) {
+                    
+                    if(objCells.item(j).innerHTML == "OFF"){
+                        objCells.item(j).style.color = "red"
+                    }
+
+                    if(objCells.item(j).innerHTML == "ON"){
+                        objCells.item(j).style.color = 'lightgreen'
+                    }
+                }
+
+            }
+    </script>
 
 </body>
 </html>
