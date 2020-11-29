@@ -40,10 +40,11 @@
             <section class="buttons">
                 <div class="buttom-atual">
                     <div class="graph">
-                        <p class="postTitle" id ="titleAtual">INFORMAÇÕES ATUAIS </p></br>
-                        <p class="post" id = "postAtual"> As informações são atualizadas a cada 30 minutos.</br>Útlima atualização feita as</p></br>
+                        <p class="postTitle" id ="titleAtual">INFORMAÇÕES ATUAIS </p>
+                        <p class="post" id = "postAtual"> As informações são atualizadas a cada 1 hora.</p></br>
                         <table class="history" id="myTableAtual" onload="soma()">
                             <tr>
+                              <th><img src="./icons/datetime.svg"/> Hora</th>  
                               <th><img src="./icons/temp.svg" /> Temperatura (ºC)</th>
                               <th><img src="./icons/moisture.svg" /> Umidade (%)</th>
                               <th><img src="./icons/waterdrop.svg"/> Irrigação</th>
@@ -51,6 +52,7 @@
                               <th><img src="./icons/lamp.svg"/> Iluminação</th>
                             </tr>
                             <tr id = "Atual">
+                                <td id="horas"></td>
                                 <td id="temperatura"></td>
                                 <td id="umidade"></td>
                                 <td id="irrigacao"></td>
@@ -63,10 +65,11 @@
                 </div>
                 
                 <div class="buttom">
-                    <a href="./pages/control.html" alt="informações">
+                    <a href="./pages/info.html" alt="informações">
                     <div class="content">
-                        <p class="postTitle">CONTROLE DE EQUIPAMENTOS</p>
-                        <p class="post">Acione os ventiladores, irrigação e sistema de iluminação</p>
+                        <p class="postTitle">INFORMAÇÕES/NOTIFICAÇÃO</p>
+                        <p class="post">Informações a fim de dimensionamentos e ajustes, com <b>dados psicométricos.</b><br>
+                                        Adicione também um telefone para notificações no <b>WhatsApp</b> para determinadas condições.</p>
                     </div></a>
                 </div>
 

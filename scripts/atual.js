@@ -3,8 +3,8 @@ var hora = data.getHours() + ":" + data.getMinutes();
 var dia = data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear();
 
 var local = document.getElementById("titleAtual").innerHTML += `- ${dia}`;
-var hora = document.getElementById("postAtual").innerHTML += ` - ${hora}`
 
+var hora = document.getElementById("horas")
 var temp = document.getElementById("temperatura")
 var umid = document.getElementById("umidade")
 var irri = document.getElementById("irrigacao")
@@ -21,6 +21,8 @@ var x = xmlDoc.getElementsByTagName("Info");
 for (i=0;i<x.length;i++)
     {
         document.write("<tr><td>");
+        document.write("</td><td>");
+        hora.innerHTML = x[i].getElementsByTagName("hora")[0].childNodes[0].nodeValue;
         document.write("</td><td>");
         temp.innerHTML = x[i].getElementsByTagName("temp")[0].childNodes[0].nodeValue;
         document.write("</td><td>");
