@@ -1,4 +1,4 @@
-@media (max-width: 750px) {
+/*@media (max-width: 750px) {
     html{
       font-size:50%;
     }
@@ -16,7 +16,7 @@
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 400px) {
     html{
       font-size:35%;
     }
@@ -25,7 +25,7 @@
     }
   }
 
-@media (max-width: 390px) {
+@media (max-width: 485px) {
     html{
       font-size:30%;
     }
@@ -50,23 +50,92 @@
     .titulo{
       margin-right: 0%;
     }
+  }*/
+
+@media (max-width: 700px) {
+    
+  html{font-size:20%;}
+    
+  header .container{justify-content: center; }
+  
+  header img {width: 4rem;}
+      
+  nav{display:none}
+  
+  header{text-align: center;}
+  
+  table{width: 5%;}
+  
+  table tr th{font-size: 100rem; padding: 0 0.7rem 0; } 
+
+  table tr th img{display: none;}
+
   }
 
-@media (max-width: 280px) {
-    html{
-      font-size:25%;
+  @media (max-width: 600px) {
+    
+    html{font-size:20%;}
+    
+    header{font-size: 65%;}
+      
+    header .container{justify-content: center; }
+    
+    header img {width: 4rem;}
+        
+    nav{display:none}
+    
+    header{text-align: center;}
+    
+    table{font-size:65%}
+    
+    table tr th{font-size: 90%;}
+  
+    table tr th img{display: none;}
+
+    table tr td{font-size:55%;}
+
+    footer{font-size:45%}
+  
     }
-    header .container{
-      justify-content: center;
-    }
-    header img {
-      width: 5rem;
-    }
-    nav{
-      display:none
+  
+    @media (max-width: 400px) {
+    
+      html{font-size:15%;}
+        
+      header .container{justify-content: center; }
+      
+      header img {width: 3rem;}
+          
+      nav{display:none}
+      
+      header{text-align: center;}
+      
+      table{width: 5rem;}
+      
+      table tr th{font-size: 65%;} 
+    
+      table tr th img{display: none;}
+    
+      }
+    
+
+      @media (max-width: 300px) {
+    
+        html{font-size:7%;}
+          
+        header .container{justify-content: center; }
+        
+        header img {width: 3rem;}
+            
+        nav{display:none}
+        
+        header{text-align: center;}
+        
+        table{width: 100%;}
+        
+        table tr th{display: none;} 
+        table tr td{font-size: 10%;}
+      
+        table tr th img{display: none;}
+      
         }
-    header{
-      text-align: center;
-    }
-  }
-
