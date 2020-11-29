@@ -54,19 +54,21 @@
 
   
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     
     /*html{font-size:15%;}*/
       
     header .container{display: block; justify-content: center;}
     header img {width: 7rem; padding: 10px;} 
-    p{font-size: 0.8rem;}
+    p#titulo{font-size: 1rem;}
+    p#subtitulo{font-size: 0.8rem;}
+    header nav ul li a{font-size: 1rem; display: flex; justify-content: center;}
     header nav{font-size: 0.5rem; display: flex; justify-content: center;}
     
     header{text-align: center;}
     table{font-size: 45%}
-    table tr th{font-size: 55%; padding: 0 0.5rem 0} 
-    table tr td{font-size: 60%;}
+    table tr th{font-size: 1rem; padding: 0 0.5rem 0} 
+    table tr td{font-size: 1rem;}
     table tr th img{display: none;}
   
     footer{font-size: 1rem;}
@@ -79,7 +81,9 @@
       
     header .container{display: block; justify-content: center;}
     header img {width: 5rem; padding-right: 0.5px;} 
-    p{font-size: 0.5rem;}
+    p#titulo{font-size: 1rem;}
+    p#subtitulo{font-size: 0.8rem;}
+    header nav ul li a{font-size: 0.7rem; display: flex; justify-content: center;}
     
     header{text-align: center;}
     table{font-size: 25%}
@@ -103,8 +107,9 @@
       
     header .container{display: block; justify-content: center;}
     header img {width: 4rem;} 
-    p{font-size: 0.1rem;}
-    header nav{font-size: 0.02rem; display: flex; justify-content: center;}
+    p#titulo{font-size: 1rem;}
+    p#subtitulo{font-size: 0.8rem;}
+    header nav ul li a{font-size: 0.7rem; display: flex; justify-content: center;}
     
     header{text-align: center;}
     table{font-size: 15%}
