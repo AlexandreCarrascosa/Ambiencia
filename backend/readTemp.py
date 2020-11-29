@@ -7,6 +7,7 @@ from datetime import datetime
 from subprocess import check_output
 from update import Timer, Atualizar
 from atualreplace import AtualRefresh
+from CalcPsic import CalcPsic
 
 conexao = Serial('/dev/ttyACM0', 9600)
 path = '../data.xml'
@@ -66,7 +67,7 @@ while True:
 				 Data()[1],
 				 temperatura,
 				 umidade)
-	
+	CalcPsic(temperatura, umidade)
 	sleep(10)
 	Atualizar()
 	
