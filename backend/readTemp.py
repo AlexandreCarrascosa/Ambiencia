@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 #import pywhatkit as kit
-from serial import Serial
+#from serial import Serial
+import serial
 from glob import glob
 from time import sleep
 from datetime import datetime
@@ -8,8 +9,13 @@ from subprocess import check_output
 from update import Timer, Atualizar
 from atualreplace import AtualRefresh
 from CalcPsic import CalcPsic
+from sys import platform
 
-conexao = Serial('/dev/ttyACM0', 9600)
+if platform == 'win32':
+	conexao = serial.Serial('COM3', 9600)
+else:
+	conexao = serial.Serial('/dev/ttyACM0', 9600)
+
 path = '../data.xml'
 tree = ET.parse(path)
 root = tree.getroot()
