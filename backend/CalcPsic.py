@@ -43,4 +43,4 @@ while True:
                 print(f'{i}: {round(values[i], 2)}')
         break
 
-input('Pressione uma tecla para encerrar...')
+

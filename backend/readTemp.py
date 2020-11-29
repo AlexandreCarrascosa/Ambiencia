@@ -6,6 +6,8 @@ from time import sleep
 from datetime import datetime
 from subprocess import check_output
 from update import Timer, Atualizar
+from atualreplace import AtualRefresh
+
 conexao = Serial('/dev/ttyACM0', 9600)
 path = '../data.xml'
 tree = ET.parse(path)
@@ -60,6 +62,10 @@ while True:
 
 	tree.write('../data.xml')
 		
+	AtualRefresh(Data()[0],
+				 Data()[1],
+				 temperatura,
+				 umidade)
 	
 	sleep(10)
 	Atualizar()
