@@ -9,7 +9,6 @@ def AtualRefresh(data, hora, temp, umd, aspr="OFF", vent="OFF", lamp="OFF"):
 
 
 	for i in root.getiterator():
-		print(i.tag, i.text)
 		if i.tag == 'data':
 			i.text = data
 		if i.tag == 'hora':
