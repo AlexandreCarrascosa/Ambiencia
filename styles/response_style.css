@@ -52,90 +52,70 @@
     }
   }*/
 
-@media (max-width: 700px) {
-    
-  html{font-size:20%;}
-    
-  header .container{justify-content: center; }
   
-  header img {width: 4rem;}
-      
-  nav{display:none}
-  
-  header{text-align: center;}
-  
-  table{width: 5%;}
-  
-  table tr th{font-size: 100rem; padding: 0 0.7rem 0; } 
-
-  table tr th img{display: none;}
-
-  }
 
   @media (max-width: 600px) {
     
-    html{font-size:20%;}
-    
-    header{font-size: 65%;}
+    /*html{font-size:15%;}*/
       
-    header .container{justify-content: center; }
-    
-    header img {width: 4rem;}
-        
-    nav{display:none}
+    header .container{display: block; justify-content: center;}
+    header img {width: 7rem; padding: 10px;} 
+    p{font-size: 0.8rem;}
+    header nav{font-size: 0.5rem; display: flex; justify-content: center;}
     
     header{text-align: center;}
-    
-    table{font-size:65%}
-    
-    table tr th{font-size: 90%;}
-  
+    table{font-size: 45%}
+    table tr th{font-size: 55%; padding: 0 0.5rem 0} 
+    table tr td{font-size: 60%;}
     table tr th img{display: none;}
-
-    table tr td{font-size:55%;}
-
-    footer{font-size:45%}
   
+    footer{font-size: 1rem;}
+    }
+
+
+  @media (max-width: 500px) {
+    
+    html{font-size:25%;}
+      
+    header .container{display: block; justify-content: center;}
+    header img {width: 5rem; padding-right: 0.5px;} 
+    p{font-size: 0.5rem;}
+    
+    header{text-align: center;}
+    table{font-size: 25%}
+    table tr th{font-size: 45%; padding: 0 0.3rem 0} 
+    table tr td{font-size: 50%;}
+    table tr th img{display: none;}
+    
+    .buttons{width: 75%;}
+    .postTitle{font-size: 1rem; margin-bottom: 0px;}
+    .post{font-size: 0.7rem;}
+    .content{margin: 10px;}
+
+
+    footer{font-size: 0.7rem;}
     }
   
-    @media (max-width: 400px) {
-    
-      html{font-size:15%;}
-        
-      header .container{justify-content: center; }
-      
-      header img {width: 3rem;}
-          
-      nav{display:none}
-      
-      header{text-align: center;}
-      
-      table{width: 5rem;}
-      
-      table tr th{font-size: 65%;} 
-    
-      table tr th img{display: none;}
-    
-      }
-    
 
-      @media (max-width: 300px) {
+  @media (max-width: 350px) {
     
-        html{font-size:7%;}
-          
-        header .container{justify-content: center; }
-        
-        header img {width: 3rem;}
-            
-        nav{display:none}
-        
-        header{text-align: center;}
-        
-        table{width: 100%;}
-        
-        table tr th{display: none;} 
-        table tr td{font-size: 10%;}
+    html{font-size:5%;}
       
-        table tr th img{display: none;}
-      
-        }
+    header .container{display: block; justify-content: center;}
+    header img {width: 4rem;} 
+    p{font-size: 0.1rem;}
+    header nav{font-size: 0.02rem; display: flex; justify-content: center;}
+    
+    header{text-align: center;}
+    table{font-size: 15%}
+    table tr th{font-size: 0.1rem; padding: 0 0.1rem 0} 
+    table tr td{font-size: 0.2rem;}
+    table tr th img{display: none;}
+    
+    .buttons{width: 75%;}
+    .postTitle{font-size: 0.7rem; margin-bottom: 5px;}
+    .post{font-size: 0.5rem;}
+    .content{margin: 10px;}
+
+    footer{font-size: 0.5rem;}
+    }
