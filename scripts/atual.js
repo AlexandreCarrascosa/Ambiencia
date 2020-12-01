@@ -1,7 +1,3 @@
-var data = new Date();
-var hora = data.getHours() + ":" + data.getMinutes();
-var dia = data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear();
-
 var local = document.getElementById("titleAtual")
 var hora = document.getElementById("horas")
 var temp = document.getElementById("temperatura")
@@ -16,8 +12,6 @@ xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
 var x = xmlDoc.getElementsByTagName("Info");
-
-
 
 for (i=0;i<x.length;i++)
     {
