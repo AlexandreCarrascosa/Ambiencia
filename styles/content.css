@@ -8,8 +8,17 @@
     grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1rem));
     grid-gap: 20px;
   }
+
+  .buttons-historico{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto-fit, 1rem));
+  }
   
-  .buttom{
+.buttom{
     display: block;
     flex-direction: column;
     background-color: white;
@@ -25,6 +34,18 @@
     
     transition: all 0.3s ease 0s;
     border-radius: 10px;
+    text-align: center;
+  } 
+
+  .list{
+    display: block;
+    flex-direction: column;
+    background-color: white;
+    
+    transition: all 0.3s ease 0s;
+    border-radius: 10px;
+    text-align: justify;
+    word-spacing: 12rem;
   } 
 
   .buttom-info{

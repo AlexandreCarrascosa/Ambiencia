@@ -2,8 +2,7 @@ var data = new Date();
 var hora = data.getHours() + ":" + data.getMinutes();
 var dia = data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear();
 
-var local = document.getElementById("titleAtual").innerHTML += `- ${dia}`;
-
+var local = document.getElementById("titleAtual")
 var hora = document.getElementById("horas")
 var temp = document.getElementById("temperatura")
 var umid = document.getElementById("umidade")
@@ -12,14 +11,17 @@ var vent = document.getElementById("ventilador")
 var lamp = document.getElementById("lampadas")
 
 xmlhttp= new XMLHttpRequest();
-xmlhttp.open("GET","./atual.xml",false);
+xmlhttp.open("GET","..//atual.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
 var x = xmlDoc.getElementsByTagName("Info");
 
+
+
 for (i=0;i<x.length;i++)
     {
+        local.innerHTML = x[i].getElementsByTagName("data")[0].childNodes[0].nodeValue;
         document.write("<tr><td>");
         document.write("</td><td>");
         hora.innerHTML = x[i].getElementsByTagName("hora")[0].childNodes[0].nodeValue;

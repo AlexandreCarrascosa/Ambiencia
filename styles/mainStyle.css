@@ -5,6 +5,7 @@
 @import url('content.css');
 @import url('textStyle.css');
 @import url('response_style.css');
+@import url('test.css');
 
 * {
   box-sizing: border-box;
