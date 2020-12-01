@@ -11,7 +11,7 @@ var vent = document.getElementById("ventilador")
 var lamp = document.getElementById("lampadas")
 
 xmlhttp= new XMLHttpRequest();
-xmlhttp.open("GET","..//atual.xml",false);
+xmlhttp.open("GET","../atual.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML;
 
