@@ -26,7 +26,7 @@ for (i=0;i<x.length;i++)
 //const data = y
 console.log(y)
 
-const data = y.map(item => {return [`${item.data +'||'+ item.hora} ${item.temp} ${item.umd} ${item.aspr} ${item.vent} ${item.lamp}`]})
+const data = y.map(item => {return [`${item.data +'||'+ item.hora} ${item.temp} ${item.umd} ${item.aspr} ${item.vent} ${item.lamp}  `]})
 
 //const data = Array.from({length: 100})
 //.map((_, i) => `Item ${(i + 1)}`)
