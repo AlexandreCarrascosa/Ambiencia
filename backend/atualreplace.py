@@ -3,7 +3,7 @@ from glob import glob
 
 def AtualRefresh(data, hora, temp, umd, aspr="OFF", vent="OFF", lamp="OFF"):
 
-	path = r'..\\atual.xml'
+	path = r'atual.xml'
 	tree = ET.parse(path)
 	root = tree.getroot()
 
@@ -25,7 +25,7 @@ def AtualRefresh(data, hora, temp, umd, aspr="OFF", vent="OFF", lamp="OFF"):
 			i.text = lamp
 
 
-	tree.write('../atual.xml')			
+	tree.write('atual.xml')			
 	
 			
 		

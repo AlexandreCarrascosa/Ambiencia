@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-#import pywhatkit as kit
+import pywhatkit as kit
 import serial
 from glob import glob
 from time import sleep
@@ -38,7 +38,7 @@ def Data():
 
 while True:
 	msg = "Dados escritos!\nIniciando contagem para próximo registro:"
-	Timer(0, 3600, msg)
+	Timer(0, 10, msg)
 	#print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
 	umidade = readTemp()[0:5]
 	temperatura = readTemp()[6:]
@@ -74,7 +74,7 @@ while True:
 	 	     umidade)
 	 	     
 	CalcPsic(temperatura, umidade)
-
+        
 	sleep(10)
 	Atualizar()
 	
