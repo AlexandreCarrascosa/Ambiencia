@@ -41,7 +41,7 @@ while True:
         Timer(0, 10, msg)
         #print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
         umidade = readTemp()[0:6]
-        temperatura = readTemp()[6:10]
+        temperatura = readTemp()[6:9]
 
         
         if int(readTemp()[12]) == 0:
