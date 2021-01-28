@@ -43,10 +43,17 @@ while True:
         umidade = readTemp()[0:5]
         temperatura = readTemp()[6:10]
 
-        if int(readTemp()[12]) < 3:
-                luz = 'ON'
-        if int(readTemp()[12]) > 2:
-                luz = 'OFF'
+        if int(readTemp()[12]) == 0:
+                lamp = 'ON'
+        if int(readTemp()[12]) == 1:
+                lamp = 'OFF'
+
+        if int(readTemp()[14]) == 0:
+                vent = 'ON'
+                aspr = 'ON'
+        if int(readTemp()[14]) == 1:
+                vent = 'OFF'
+                aspr = 'OFF'
         
         info = ET.SubElement(root, 'Info')
         
@@ -63,13 +70,13 @@ while True:
         umid.text = umidade
         
         aspr = ET.SubElement(info, 'aspr')
-        aspr.text = 'OFF'
+        aspr.text = aspr
 
         vent = ET.SubElement(info, 'vent')
-        vent.text = 'OFF'
+        vent.text = vent
 
         lamp = ET.SubElement(info, 'lamp')
-        lamp.text = 'OFF'
+        lamp.text = lamp
 
         tree.write('../data.xml')
 
@@ -77,7 +84,9 @@ while True:
                      Data()[1],
                      temperatura,
                      umidade,
-                     lamp = luz)
+                     lamp = lamp,
+                     vent = vent,
+                     aspr = aspr)
                      
         CalcPsic(temperatura, umidade)
         
@@ -85,6 +94,5 @@ while True:
         Atualizar()
         
 
-        if float(temperatura) > 32:
-                kit.sendwhatmsg("+5566999087650", "Temperatura acima de 32ºC, verifique a Estufa!")
+        
 
