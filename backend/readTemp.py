@@ -43,7 +43,7 @@ while True:
         umidade = readTemp()[0:5]
         temperatura = readTemp()[6:10]
 
-        print(readTemp())
+        print(readTemp()[11])
         
         info = ET.SubElement(root, 'Info')
         
@@ -81,6 +81,6 @@ while True:
         Atualizar()
         
 
-        if temperatura > 32:
+        if float(temperatura) > 32:
                 kit.sendwhatmsg("+5566999087650", "Temperatura acima de 32ºC, verifique a Estufa!")
 
