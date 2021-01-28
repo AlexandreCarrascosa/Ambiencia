@@ -43,7 +43,7 @@ while True:
         umidade = readTemp()[0:5]
         temperatura = readTemp()[6:10]
 
-        print(readTemp()[11])
+        print(readTemp()[10])
         
         info = ET.SubElement(root, 'Info')
         
