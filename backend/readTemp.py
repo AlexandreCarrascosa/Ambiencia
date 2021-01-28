@@ -40,7 +40,7 @@ while True:
         msg = "Dados escritos!\nIniciando contagem para próximo registro:"
         Timer(0, 10, msg)
         #print(f'{Data()[0]}, {Data()[1]}, {readTemp()}')
-        umidade = readTemp()[0:5]
+        umidade = readTemp()[0:6]
         temperatura = readTemp()[6:10]
 
         
