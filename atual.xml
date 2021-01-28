@@ -1,11 +1,11 @@
 <Atual>
     <Info>
         <data>28/01/2021</data>
-        <hora>14:48</hora>
+        <hora>14:55</hora>
         <temp>29.0</temp>
         <umd>75.00</umd>
-        <aspr />
-        <vent />
-        <lamp />
+        <aspr>ON</aspr>
+        <vent>ON</vent>
+        <lamp>OFF</lamp>
     </Info>
 </Atual>

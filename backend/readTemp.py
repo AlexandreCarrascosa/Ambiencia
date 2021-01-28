@@ -43,17 +43,20 @@ while True:
         umidade = readTemp()[0:5]
         temperatura = readTemp()[6:10]
 
+        print(readTemp())
+        
         if int(readTemp()[12]) == 0:
-                lamp = 'ON'
+                luz = 'ON'
         if int(readTemp()[12]) == 1:
-                lamp = 'OFF'
+                luz = 'OFF'
 
         if int(readTemp()[14]) == 0:
-                vent = 'ON'
-                aspr = 'ON'
+                vento = 'ON'
+                agua = 'ON'
         if int(readTemp()[14]) == 1:
-                vent = 'OFF'
-                aspr = 'OFF'
+                vento = 'OFF'
+                agua = 'OFF'
+
         
         info = ET.SubElement(root, 'Info')
         
@@ -70,13 +73,13 @@ while True:
         umid.text = umidade
         
         aspr = ET.SubElement(info, 'aspr')
-        aspr.text = aspr
+        aspr.text = agua
 
         vent = ET.SubElement(info, 'vent')
-        vent.text = vent
+        vent.text = vento
 
         lamp = ET.SubElement(info, 'lamp')
-        lamp.text = lamp
+        lamp.text = luz
 
         tree.write('../data.xml')
 
@@ -84,9 +87,9 @@ while True:
                      Data()[1],
                      temperatura,
                      umidade,
-                     lamp = lamp,
-                     vent = vent,
-                     aspr = aspr)
+                     aspr = agua,
+                     vent = vento,
+                     lamp = luz)
                      
         CalcPsic(temperatura, umidade)
         
