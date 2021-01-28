@@ -43,7 +43,10 @@ while True:
         umidade = readTemp()[0:5]
         temperatura = readTemp()[6:10]
 
-        print(readTemp()[10])
+        if int(readTemp()[12]) < 3:
+                luz = 'ON'
+        if int(readTemp()[12]) > 2:
+                luz = 'OFF'
         
         info = ET.SubElement(root, 'Info')
         
@@ -73,7 +76,8 @@ while True:
         AtualRefresh(Data()[0],
                      Data()[1],
                      temperatura,
-                     umidade)
+                     umidade,
+                     lamp = luz)
                      
         CalcPsic(temperatura, umidade)
         
